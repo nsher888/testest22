@@ -1,0 +1,82 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	font-family: "Raleway", sans-serif;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+.container {
+	width: 100%;
+	min-height: 100vh;
+	background-color: grey;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 3rem;
+	gap: 1rem;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fff;
+	width: 300px;
+	padding: 2rem 0;
+	position: relative;
+}
+
+.user-id {
+	font-size: 1.6rem;
+	margin-right: 1.5rem;
+	align-self: flex-end;
+}
+
+.user-img {
+	max-width: 250px;
+	margin-bottom: 1rem;
+}
+
+.user-name {
+	font-size: 2.2rem;
+	margin-bottom: 0.5rem;
+}
+
+.user-lastName {
+	font-size: 1.6rem;
+	margin-bottom: 0.3rem;
+}
+
+.user-age {
+	font-size: 1.4rem;
+	margin-bottom: 0.7rem;
+}
+
+.user-adresses {
+	font-size: 1.2rem;
+}
+
+.active {
+	background-color: darkcyan;
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.46);
+}
