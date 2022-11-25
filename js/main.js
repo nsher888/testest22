@@ -83,10 +83,7 @@ container.innerHTML = render();
 const cards = document.querySelectorAll(".card");
 
 cards.forEach((card) => {
-	card.addEventListener("click", (e) => {
-		if (e.target.parentNode.id === "card") {
-			const targetCard = e.target.parentNode;
-			targetCard.classList.toggle("active");
-		}
+	card.addEventListener("click", () => {
+		card.classList.toggle("active");
 	});
 });
